@@ -1,5 +1,6 @@
 <h1>Authentication Form</h1>
-<% form_with(@credentials) do |credentials|  %>
+<% form_for(@credentials) do |credentials|  %>
+
   <div>
     <%= credentials.label :username %><br />
     <%= credentials.text_field :username %>
