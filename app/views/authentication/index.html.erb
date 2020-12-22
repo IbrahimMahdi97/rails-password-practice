@@ -1,0 +1,19 @@
+<h1>Authentication Form</h1>
+<% form_with(@credentials) do |credentials|  %>
+  <div>
+    <%= credentials.label :username %><br />
+    <%= credentials.text_field :username %>
+  </div>
+  <div>
+    <%= credentials.label :email %><br />
+    <%= credentials.text_field :email %>
+  </div>
+  <div>
+    <%= credentials.label :password %><br />
+    <%= credentials.text_field :password %>
+  </div>
+  <div>
+    <%= credentials.submit "Submit" %>
+    
+  </div>
+<% end %>
