@@ -3,15 +3,14 @@ class CheckController < ApplicationController
     @checks = Check.new
   end
 
-  def show
-    @checks = Check.find(params[:id])
-    if :email == "ralf"  && :password == "poop"
-      alertmessage == "username and password correct"
-    else 
-      alertmessage == "incorrect password and/or username"
-    end 
-    return alertmessage
-  end
+  def create
+    @checks = Check.new
+      if @checks.email == "ralf"  && @checks.password == "poop"
+        puts "username and password correct"
+      else 
+        puts "incorrect password and/or username"
+      end
+  end 
 
   # private 
   # def check_params

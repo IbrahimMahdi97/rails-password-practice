@@ -1,7 +1,9 @@
 <h1>Authentication Form</h1>
 
 <%# url: "/search", method: :get do %>
-<%= form_for @checks, url: check_new_path do |credentials|  %>
+<%# <%= form_for @checks, url: check_new_path do |credentials|  %> %>
+
+<%= form_for(@checks) do |credentials|  %>
 
   <div>
     <%= credentials.label :name %><br />
@@ -16,7 +18,7 @@
     <%= credentials.text_field :password %>
   </div>
   <div>
-    <%= credentials.submit "Submit" %>
-    
+    <%= credentials.submit "Submit" %> <br />
+    <%= credentials.label :message %>
   </div>
 <% end %>
