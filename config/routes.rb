@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # get '/check/new' => 'check#new'
   # post '/check/new' => 'check#create'
 
-  root 'check#new'
-  resources :check
+  root 'authinticate#new'
+  resources :authinticate
 
 end

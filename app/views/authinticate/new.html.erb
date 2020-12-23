@@ -1,0 +1,26 @@
+<h1>Authentication Form</h1>
+
+<%# url: "/search", method: :get do %>
+<%# <%= form_for @checks, url: check_new_path do |credentials|  %>
+
+<%# <%= form_with model: @check do |credentials|  %> 
+<%# <% binding.irb %> 
+<%= form_for @authinticate do |f|  %>
+
+  <div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div>
+    <%= f.submit "Submit" %> <br />
+    <%= f.label :message %>
+  </div>
+<% end %>

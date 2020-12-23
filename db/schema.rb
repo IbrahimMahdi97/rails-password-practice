@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_21_211054) do
+ActiveRecord::Schema.define(version: 2020_12_23_225049) do
 
-  create_table "checks", force: :cascade do |t|
+  create_table "authinticate", force: :cascade do |t|
     t.string "email"
     t.string "password"
     t.string "name"
