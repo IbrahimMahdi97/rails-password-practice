@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'passcheck' => 'checkpass#index'
+  # get '/check/new' => 'check#new'
+  # post '/check/new' => 'check#create'
+
+  root 'authinticate#new'
+  resources :authinticate
+
 end
